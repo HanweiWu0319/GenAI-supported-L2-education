@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <config version="1.1.1" htmlParse="false">
+
+     <!-- title of the study -->
+     <item id="studyTitle">My_Q_project</item>
+
+     <!-- text-align property(left|right) -->
+     <item id="textAlign">left</item>
+
+     <!-- shuffle cards (true|false) (4) -->
+     <item id="shuffleCards">true</item>
+
+     <!-- access code required (true|false) (5) -->
+     <item id="loginrequired">false</item>
+     <item id="clearCachePassword">cleareqmobilecache</item>
+     <!-- login with common password (leave blank if not required) -->
+     <item id="loginPassword"></item>
+    <item id="partNameRequired">true</item>
+      <!-- Use login script -->
+     <item id="useLogInScript">false</item>
+      <!-- URL to individual login script(leave blank if not required) -->
+     <item id="loginUrl"></item>
+     <!-- request mode (post|get) -->
+     <item id="loginUrlMethod"></item>
+
+     <item id="setConstantCardHeight">false</item>
+     <item id="constantCardHeight">150</item>
+     <item id="setConstantCardWidth">false</item>
+     <item id="constantCardWidth">200</item>
+     <!-- activate/deactivate optional steps (true|false) -->
+     <item id="showStep3">true</item>
+     <item id="showStep4">true</item>
+     <item id="showStep5">true</item>
+
+     <!-- HtmlQ only: disable the in-window back button -->
+     <item id="disableBackButton">true</item>
+
+     <!-- define form elements for step5; only displayed if showStep5 is true (delete tags if not required) -->
+     <!-- add label: <label>[STRING]</label> -->
+     <!-- add note: <note>[STRING]</note> -->
+     <!-- add input-field: <input type="[text|textarea|radio|select|checkbox|rating2|rating5|rating10]">[VALUE]</input> -->
+     <!-- optional attributes: bg, id, maxlength, restricted, required, scale  -->
+     <item id="form">
+        <label>姓名</label>
+        <note>请输入您的真实姓名，仅作数据匹配之用，感谢您的帮助</note>
+        <input type="text" required="true" maxlength="100000" ></input>
+
+        <label>年龄</label>
+        <note>请输入您的周岁年龄</note>
+        <input type="text" required="true" maxlength="100000" ></input>
+
+        <label>性别</label>
+        <note>请输入“男” 或 “女”</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>教龄</label>
+        <note>此题针对教师，请输入大致教龄，如 12。若既是学生也是教师，则以教师身份为准</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>工作单位</label>
+        <note>请输入您的工作单位，如“湖南师范大学”</note>
+        <input type="text" required="true" maxlength="100000" ></input>
+
+        <label>职称</label>
+        <note>此题仅针对教师，请输入您的职称，如 “讲师”，中小学则输入中小学的职称，若同为学生和教师，则以教师身份为准</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+        <label>专业与年级</label>
+        <note>如  “学科教学英语，研二”</note>
+        <input type="text" required="false" maxlength="100000" ></input>
+
+     </item>
+
+     <!-- URL for data transmission via POST/GET (leave blank if not required) -->
+     <item id="submitUrl">exe.php?do=save</item>
+  
+     <!-- request mode (post|get|firebase) -->
+     <item id="submitUrlMethod">firebase</item>
+  
+     <!-- data transmission via email, user must have an e-mail programm like Outlook (leave blank if not required) -->
+     <item id="submitMail">yourdomain.com</item>
+   </config>
